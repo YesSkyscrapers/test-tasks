@@ -19,8 +19,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
@@ -32,7 +30,98 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.Tabs-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  flex-direction: row;
+  display: flex;
+  background-color: white;
+  border-radius: 16px;
+}
+
+.Active-tab {
+  color: #1f2229;
+  font-size: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: lightgrey;
+  border-radius: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.Tab {
+  color: #1f2229;
+  font-size: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.Task-container {
+  background-color: white;
+  border-radius: 40px;
+  padding: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.Backend-task-container {
+  background-color: white;
+  border-radius: 40px;
+  padding: 40px;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 40px;
+}
+
+.Task-text {
+  font-size: 16px;
+  color: #1f2229;
+  text-align: left;
+}
+
+.Backend-task-text {
+  font-size: 16px;
+  color: #1f2229;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+.Task-title {
+  font-size: 22px;
+  color: #1f2229;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.Task-subtitle {
+  font-size: 16px;
+  color: #1f2229;
+  text-align: left;
+  font-style: italic;
 }
